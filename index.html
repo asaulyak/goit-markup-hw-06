@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,8 +49,15 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="button mobile-menu-button-open js-open-menu">
+          <svg class="mobile-menu-button-icon-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="container">
@@ -117,13 +125,13 @@
 
           <ul class="areas-list list">
             <li class="areas-list-item">
-              <img src="./images/area/img-1.jpg" alt="Desktop applications" width="360" height="300" />
+              <img loading="lazy" src="./images/area/img-1.jpg" alt="Desktop applications" width="360" height="300" />
             </li>
             <li class="areas-list-item">
-              <img src="./images/area/img-2.jpg" alt="Mobile applications" width="360" height="300" />
+              <img loading="lazy" src="./images/area/img-2.jpg" alt="Mobile applications" width="360" height="300" />
             </li>
             <li class="areas-list-item">
-              <img src="./images/area/img-3.jpg" alt="Hybrid applications" width="360" height="300" />
+              <img loading="lazy" src="./images/area/img-3.jpg" alt="Hybrid applications" width="360" height="300" />
             </li>
           </ul>
         </div>
@@ -341,7 +349,7 @@
     <footer class="page-footer">
       <div class="footer-container container">
         <div class="footer-company-info">
-          <a class="logo link" href="./index.html">Web<span class="logo-end">Studio</span> </a>
+          <a class="logo link footer-logo-link" href="./index.html">Web<span class="logo-end">Studio</span> </a>
 
           <p class="footer-description">
             Increase the flow of customers and sales for your business with digital marketing & growth solutions.
@@ -478,6 +486,72 @@
       </div>
     </div>
 
+    <div class="mobile-menu js-menu-container">
+      <button class="button mobile-menu-button-close js-close-menu">
+        <svg class="mobile-menu-button-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav-list list">
+        <li class="mobile-menu-nav-item">
+          <a href="" class="mobile-menu-nav-item-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="" class="mobile-menu-nav-item-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="" class="mobile-menu-nav-item-link link">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-contacts">
+        <address class="mobile-menu-address">
+          <a class="link mobile-menu-phone-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+
+          <a class="link mobile-menu-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </address>
+
+        <ul class="mobile-menu-socials-list list">
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link link">
+              <svg width="24" height="24" class="mobile-menu-socials-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link link">
+              <svg width="24" height="24" class="mobile-menu-socials-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link link">
+              <svg width="24" height="24" class="mobile-menu-socials-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="" class="mobile-menu-socials-link link">
+              <svg width="24" height="24" class="mobile-menu-socials-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
