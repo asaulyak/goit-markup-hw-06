@@ -347,7 +347,7 @@ address a:focus {
 }
 
 .project-cards::after {
-  content: "";
+  content: '';
   flex: auto;
 }
 
@@ -446,7 +446,8 @@ address a:focus {
   max-width: 1440px;
 
   background-color: var(--navy-blue);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/hero-bg.jpg');
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/hero-bg-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -456,6 +457,47 @@ address a:focus {
 @media screen and (min-width: 1158px) {
   .section-hero {
     padding: 188px 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 767.98px) and (min-resolution: 192dpi),
+  screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-bg-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-bg-tablet.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-bg-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-bg-desktop.jpg');
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-bg-desktop@2x.jpg');
   }
 }
 
