@@ -205,6 +205,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  font-style: normal;
 }
 
 @media screen and (max-width: 1157.98px) {
@@ -573,7 +574,8 @@ address a:focus {
 
 @media screen and (min-width: 768px) {
   .features-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -642,7 +644,6 @@ address a:focus {
 }
 
 .features-item-description {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -712,7 +713,8 @@ address a:focus {
 
 @media screen and (min-width: 768px) {
   .team-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 }
 
@@ -893,7 +895,9 @@ address a:focus {
 .modal-window {
   position: absolute;
 
-  width: 392px;
+  min-width: 310px;
+  max-width: 392px;
+  width: calc(100vw - 20px);
   min-height: 584px;
   padding: 72px 24px 24px 24px;
 
